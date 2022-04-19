@@ -232,8 +232,36 @@ img {
     display: flex;
 }
 
+.features-list-item {
+    display: block;
+}
+
+.features-container {
+    display: flex;
+    width: 270px;
+    background-color: var(--background-team);
+    border-radius: 4px;
+    justify-content: center;
+    padding: 25px 0;
+    margin-bottom: 30px;
+}
+
+/* .features-list-item::before {
+    content: '';
+    display: block;
+    height: 120px;
+    background-color: var(--background-team);
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+} */
+
 .features-list .features-list-item + .features-list-item {
     margin-left: 30px;
+}
+
+.antenna::before {
+    background-image: url('../image/icon/symbol-defs.svg#icon-antenna-1');
 }
 
 .features-list-item-header {
