@@ -116,21 +116,13 @@ img {
 }
 
 .header-link {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--main-text-color);
-}
-
-.header-link-contact {
-    display: flex;
-    align-items: center;
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--second-text-color);
+    color: var(--main-text-color);
 }
 
 .header-nav-link .header-link.active {
@@ -145,12 +137,6 @@ img {
     margin-left: 50px;
 }
 
-.header-link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
 .header-contacts {
     display: flex;
     margin-left: auto;
@@ -161,6 +147,16 @@ img {
     height: 16px;
 }
 
+.header-link-contact {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+}
 .icon-mail {
     margin-right: 10px;
     fill: currentColor;
@@ -584,14 +580,6 @@ img {
     margin-bottom: 30px;
 }
 
-.project-list-item:nth-child(3n) {
-    margin-right: 0;
-}
-
-.project-list-item:nth-child(n + 7) {
-    margin-bottom: 0;
-}
-
 .portfolio-filter .portfolio-filter-btn.active {
     background-color: var(--hover-color-btn);
     color: var(--button-text-color);
@@ -601,9 +589,21 @@ img {
 .portfolio-filter-btn:focus {
     color: var(--button-text-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.project-list-img {
+.project-list-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.project-list-item:nth-child(n + 7) {
+    margin-bottom: 0;
+}
+
+.projects-list-item-link {
+    display: block;
+    color: inherit;
 }
 
 .project-item-text {
@@ -623,4 +623,9 @@ img {
     font-size: 16px;
     line-height: 1.88;
     color: var(--second-text-color);
+}
+.projects-list-item-link:hover,
+.projects-list-item-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
