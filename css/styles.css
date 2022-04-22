@@ -13,6 +13,7 @@
     --background-portfolio-btn: #f5f4fa;
     --background-page: #ffffff;
     --background-hero: #2f303a;
+    --border-color-card: #eeeeee;
 }
 
 body {
@@ -502,6 +503,7 @@ img {
 
 .footer-social-list {
     display: flex;
+    margin-top: 20px;
 }
 
 .social-item + .social-item {
@@ -515,8 +517,6 @@ img {
     text-transform: uppercase;
 
     color: var(--footer-addres-white);
-
-    margin-bottom: 20px;
 }
 
 .social-item-link {
@@ -611,7 +611,7 @@ img {
 
 .project-item-text {
     padding: 20px 24px;
-    border: 1px solid #eeeeee;
+    border: 1px solid var(--border-color-card);
 }
 
 .project-list-header {
