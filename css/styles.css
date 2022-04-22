@@ -14,6 +14,10 @@
     --background-page: #ffffff;
     --background-hero: #2f303a;
     --border-color-card: #eeeeee;
+    --header-border-line: #ececec;
+    --color-icon-team: #afb1b8;
+    --color-footer-item-link: #ffffff;
+    --hover-icon-fill: #ffffff;
 }
 
 body {
@@ -65,7 +69,7 @@ img {
 }
 
 .header {
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid var(--header-border-line);
 }
 
 .header-container {
@@ -100,7 +104,6 @@ img {
     line-height: 1.19;
     color: inherit;
 
-    margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
 }
@@ -130,6 +133,7 @@ img {
 
 .header-nav-link {
     display: flex;
+    margin-left: 93px;
 }
 
 .header-nav-link .link-nav + .link-nav {
@@ -372,7 +376,7 @@ img {
     width: 44px;
     height: 44px;
     background-color: var(--background-page);
-    fill: #afb1b8;
+    fill: var(--color-icon-team);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -381,8 +385,8 @@ img {
 
 .team-social-link:hover,
 .team-social-link:focus {
-    background-color: #2196f3;
-    fill: #ffffff;
+    background-color: var(--accent-color);
+    fill: var(--hover-icon-fill);
 }
 
 /* ---------------------CLIENTS------------------------- */
@@ -412,12 +416,12 @@ img {
 .clients-link {
     width: 170px;
     height: 92px;
-    border: 1px solid #afb1b8;
+    border: 1px solid var(--color-icon-team);
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: #afb1b8;
+    fill: var(--color-icon-team);
 }
 
 .clients-link:hover,
@@ -436,12 +440,8 @@ img {
 
 .foot-container {
     display: flex;
+    align-items: baseline;
 }
-
-/* .footer-addres-block {
-    padding-top: 60px;
-    padding-bottom: 60px;
-} */
 
 .footer-logo {
     text-decoration: none;
@@ -528,7 +528,7 @@ img {
 
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    fill: #ffffff;
+    fill: var(--color-footer-item-link);
 }
 
 .social-item-link:hover,
