@@ -63,13 +63,11 @@ img {
     font-family: 'Roboto';
 }
 
-.header-container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+.header {
     border-bottom: 1px solid #ececec;
+}
 
+.header-container {
     display: flex;
     align-items: center;
 }
@@ -247,10 +245,11 @@ img {
 .features-container {
     display: flex;
     width: 270px;
+    height: 120px;
     background-color: var(--background-team);
     border-radius: 4px;
     justify-content: center;
-    padding: 25px 0;
+    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -422,28 +421,26 @@ img {
 
 .clients-link:hover,
 .clients-link:focus {
-    fill: #2196f3;
-    border: 1px solid #2196f3;
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 /* ---------------------FOOTER------------------------- */
 
 .footer {
     background-color: var(--background-footer);
-}
-
-.footer-addres-block {
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-.footer-container {
+.foot-container {
     display: flex;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
 }
+
+/* .footer-addres-block {
+    padding-top: 60px;
+    padding-bottom: 60px;
+} */
 
 .footer-logo {
     text-decoration: none;
@@ -489,11 +486,18 @@ img {
     color: var(--footer-phone-mail-color);
 }
 
+.footer-address-map:hover,
+.footer-address-map:focus,
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-phone:hover,
+.footer-phone:focus {
+    color: var(--hover-color-btn);
+}
+
 .footer-social {
     width: 206px;
     margin-left: 70px;
-    padding-top: 72px;
-    padding-bottom: 100px;
 }
 
 .footer-social-list {
@@ -529,8 +533,7 @@ img {
 
 .social-item-link:hover,
 .social-item-link:focus {
-    background-color: #2196f3;
-    fill: #ffffff;
+    background-color: var(--accent-color);
 }
 
 /* ---------------------PORTFOLIO------------------------- */
